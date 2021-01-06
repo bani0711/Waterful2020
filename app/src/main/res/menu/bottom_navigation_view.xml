@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemMain"
+        android:icon="@drawable/ic_main"
+        android:title="메인"/>
+    <item
+        android:id="@+id/itemQuest"
+        android:icon="@drawable/ic_quest"
+        android:title="성취"/>
+    <item
+        android:id="@+id/itemHistory"
+        android:icon="@drawable/ic_history"
+        android:title="통계"/>
+    <item
+        android:id="@+id/itemSetting"
+        android:icon="@drawable/ic_setting"
+        android:title="설정"/>
+</menu>

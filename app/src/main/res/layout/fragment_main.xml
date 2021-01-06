@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    tools:context=".MainFragment">
+    <!-- 메인 페이지 -->
+    <LinearLayout
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvUserNickName"
+            android:text="닉네임"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 음수량 표시 데이터 -->
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:wlv_borderColor="#B1B2F6"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="0"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleTop="2000ml"
+        app:wlv_titleTopColor="@color/colorPrimaryDark"
+        app:wlv_titleCenter="0%"
+        app:wlv_titleCenterColor="@color/colorPrimaryDark"
+        app:wlv_titleCenterSize="24dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="50"
+        app:wlv_wave_background_Color="@color/colorWhite"
+        app:wlv_waveColor="#B1B2F6" />
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="섭취량 "
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtIntake"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:enabled="false"
+            android:text="0"
+            android:gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" ml"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

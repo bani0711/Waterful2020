@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lineService"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:paddingLeft="13dp"
+    android:paddingStart="13dp"
+    android:paddingRight="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 고객센터 리사이클러뷰 커스텀 페이지 -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/ibtnExpand"
+        android:src="@drawable/ic_expand"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0"
+        android:scaleType="fitCenter"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+</LinearLayout>

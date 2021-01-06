@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".ConnectActivity">
+    <!-- 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarConnect"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="코스터 연동하기"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 기기연동 페이지 -->
+    <ImageView
+        android:src="@drawable/coaster"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"/>
+
+    <TextView
+        android:text="기기와 연동하기"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnReConnect"
+        android:text="연결하기"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

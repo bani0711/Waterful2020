@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".Intro4Activity">
+    <!-- 튜토리얼 페이지4 -->
+    <TextView
+        android:text="시작할 준비가\n 끝났습니다!"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 메인 페이지로 이동 -->
+    <Button
+        android:id="@+id/btnJoin"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorWhite"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="시작하기" />
+</LinearLayout>

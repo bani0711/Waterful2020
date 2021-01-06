@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- day 최종 구현 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".HistoryDayFragment">
+    <!-- day 슬라이드 최종 구현 페이지 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <androidx.viewpager2.widget.ViewPager2
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 하단 달성률, 섭취량 보여줌-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 섭취량에 따라 '오늘은 부족해요', '충분하군요', '적당해요' 등의 문구가 보일 예정 -->
+        <LinearLayout
+            android:background="@drawable/edt_border"
+            android:layout_marginRight="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvHow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="53dp"
+                android:layout_marginVertical="20dp"
+                android:text="충분하군요"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <!-- 일일 달성률을 원형 차트 형태로 보여줌 -->
+        <LinearLayout
+            android:background="@drawable/edt_border"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="달성률"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tvAchivPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:text="28%"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 하루 총 섭취량을 보여줌 -->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/edt_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하루 섭취량"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tvDailyIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:text="459ml"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>
